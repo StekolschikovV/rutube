@@ -1,0 +1,102 @@
+$hover-color: #03a9f4
+$grey-one-color: #b7b7b7
+$grey-two-color: #989897
+
+=ul
+  list-style: none
+  display: inline-flex
+  li
+    height: 54px
+
+body
+  background: #1685ff
+
+.header-rutube
+  background: white
+  width: 100%
+  height: 54px
+  .container
+    height: 54px
+    .row
+      display: flex
+      justify-content: space-between
+      .header-rutube-search
+        display: flex
+        align-items: center
+        width: 100%
+        height: 54px
+        justify-content: flex-end
+        padding-right: 10px
+        form
+          width: 250px
+          input
+            padding: 6px 37px 6px 11px
+            width: 100%
+            border-radius: 4px
+            border: 1px solid $grey-one-color
+            &::placeholder
+              color: $grey-one-color
+      .header-rutube-logo
+        display: flex
+        min-width: 200px
+        max-width: 200px
+        height: 54px
+        img
+          margin-top: 5px
+          width: 100%
+          height: 45px
+      .header-rutube-menu
+        display: flex
+        width: 100%
+        ul
+          +ul
+          li
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 30px
+            font-size: .9em
+      .header-rutube-buttons
+        display: flex
+        ul
+          +ul
+          li
+            width: 58px
+            background: white
+            display: block
+            text-align: center
+            padding-top: 9px
+            border-right: 1px solid $grey-one-color
+            cursor: pointer
+            &:first-child
+              border-left: 1px solid $grey-one-color
+            i
+              font-size: 25px
+            .text
+              font: .8em 'Open Sans Semibold',Arial,Tahoma,Verdana,Sans-serif
+              color: $grey-one-color
+            &:nth-child(1)
+              i
+                color: $grey-two-color
+            &:nth-child(2)
+              i
+                color: $grey-one-color
+            &:hover
+              *
+                transition: 0.3s
+                color: $hover-color !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
